@@ -98,13 +98,12 @@ function GalleryDetail() {
                     <p>{item.date}</p>
                 </div>
                 <div>
-                    <p> {item.location}
-                        {item.directors}
-                        {item.costumes}
-                        {item.scenes}
-                        {item.lighting}
-                        {item.photos}
-                    </p>
+                    <p>{item.location}</p>
+                    <p>{item.directors}</p>
+                    <p>{item.costumes}</p>
+                    <p>{item.scenes}</p>
+                    <p>{item.lighting}</p>
+                    <p>{item.photos}</p>
                 </div>
             </div>
             <div className="gallery-images">

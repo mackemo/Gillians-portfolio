@@ -21,7 +21,7 @@ function Contact() {
 
     // set changes of form input
     const handleChange = (e) => {
-        const { name, value } = e.targert;
+        const { name, value } = e.target;
 
         setForm({
             ...form,
@@ -107,7 +107,7 @@ function Contact() {
                 />
 
                 <label htmlFor="message">Message:</label><br />
-                <input
+                <textarea
                     type="text"
                     id="message"
                     name="message"
