@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-function Projects() {
+function Gallery() {
     return (
         <></>
     )
 }
 
-export default Projects;
+export default Gallery;
