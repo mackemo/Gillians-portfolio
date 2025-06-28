@@ -141,7 +141,9 @@ label {
 .gallery-title {
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   color: var(--color-accent);
 }
 
@@ -159,7 +161,7 @@ label {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  background-color: #1f1f1f;
+  background-color: #b9d4c6;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -178,7 +180,7 @@ label {
 
 .info {
   padding: 0.75rem 1rem;
-  background-color: #141414;
+  background-color: #b9d4c6;
   color: var(--color-text-dark);
   font-weight: 600;
   text-align: center;
