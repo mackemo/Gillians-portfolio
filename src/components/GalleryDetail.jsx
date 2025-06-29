@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const galleryData = {
     'they-dont-pay': {
@@ -90,28 +91,37 @@ function GalleryDetail() {
     }
 
     return (
-        <section className="gallery-detail">
-            <h1>{item.title}</h1>
-            <div className='gallery-info'>
-                <div>
-                    <p>{item.role}</p>
-                    <p>{item.date}</p>
+        <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                >
+            
+            <section className="gallery-detail">
+                <h1>{item.title}</h1>
+                <div className='gallery-info'>
+                    <div>
+                        <p>{item.role}</p>
+                        <p>{item.date}</p>
+                    </div>
+                    <div>
+                        <p>{item.location}</p>
+                        <p>{item.directors}</p>
+                        <p>{item.costumes}</p>
+                        <p>{item.scenes}</p>
+                        <p>{item.lighting}</p>
+                        <p>{item.photos}</p>
+                    </div>
                 </div>
-                <div>
-                    <p>{item.location}</p>
-                    <p>{item.directors}</p>
-                    <p>{item.costumes}</p>
-                    <p>{item.scenes}</p>
-                    <p>{item.lighting}</p>
-                    <p>{item.photos}</p>
+                <div className="gallery-images">
+                    {item.img.map((src, idx) => (
+                        <img key={idx} src={src} alt={`${item.title} ${idx + 1}`} />
+                    ))}
                 </div>
-            </div>
-            <div className="gallery-images">
-                {item.img.map((src, idx) => (
-                    <img key={idx} src={src} alt={`${item.title} ${idx + 1}`} />
-                ))}
-            </div>
-        </section>
+            </section>
+
+        </motion.div>
     );
 }
 

@@ -1,11 +1,11 @@
 :root {
   --color-bg-dark: #e1f2e7;
-  --color-text-dark: #253c32e6;
-  --color-accent: #723a28;
-  --color-accent-hover: #834634;
-  --color-bg-light: #ffffff;
+  --color-text-dark: #000000e6;
+  --color-accent: #4f1e0e;
+  --color-accent-hover: #fae6da;
+  --color-bg-light: #b69e9e;
   --color-text-light: #213547;
-  --color-button-bg-dark: #435f4c;
+  --color-button-bg-dark: #86ac92;
   --color-button-bg-light: #f9f9f9;
   --font-family-base: Geneva, 'Lucida Sans Unicode', Verdana, 'Lucida Grande', 'Lucida Sans Regular', sans-serif;
 
@@ -29,14 +29,36 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--color-bg-dark);
   color: var(--color-text-dark);
   font-size: 1rem;
   line-height: 1.5;
   padding: 1rem 2rem;
   box-sizing: border-box;
   font-feature-settings: "liga", "calt";
+  background-image: url('./assets/images/gillian-background.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(1.15);
 }
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
 
 a {
   font-weight: 600;
@@ -175,6 +197,11 @@ label {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery:hover img {
+  transform: scale(1.05);
 }
 
 .info {
@@ -186,7 +213,7 @@ label {
 }
 
 .navbar {
-  background-color: #5f937c;
+  background-color: #5c7464db;
   padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.7);
   position: sticky;
@@ -244,14 +271,14 @@ label {
 }
 
 .name {
-  font-size: 2.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.2em;
   color: var(--color-accent);
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 2.8rem;
   font-weight: 500;
   margin-bottom: 1rem;
   color: var(--color-accent-hover);
@@ -278,6 +305,17 @@ label {
   height: auto;
   object-fit: cover;
   border-radius: 16px;
+
+  /* Fade effect */
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  /* Optional: glow that helps blend */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact Page */
