@@ -51,6 +51,11 @@ import rg13 from '../assets/images/gallery-images/rg13.png'
 import rg14 from '../assets/images/gallery-images/rg14.png'
 import rg15 from '../assets/images/gallery-images/rg15.png'
 
+import mb1 from '../assets/images/gallery-images/mb1.png'
+import mb2 from '../assets/images/gallery-images/mb2.png'
+import mb3 from '../assets/images/gallery-images/mb3.png'
+import mb4 from '../assets/images/gallery-images/mb4.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -75,58 +80,58 @@ const galleryData = {
         scenes: "Scenic Designer: Rob Koharchik",
         lighting: "Lighting Designer: Ryan Koharchik",
         photos: "Photos: Zach Rosing",
-        img: [rg1, rg2, rg3, rg4, rg5, rg6, rg7, rg8, rg9, rg10, rg11, rg12, rg13, rg14, rg15]
+        img: [rg1, rg2, rg3, rg7, rg5, rg6, rg4, rg8, rg9, rg10, rg11, rg12, rg13, rg14, rg15]
     },
 
     'men-on-boats': {
         title: "Men On Boats",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Role: Mr. Asa / Assistant Costume Designer",
+        date: "Date: February 2023",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
-        photos: "Photos: Zach Rosing",
-        img: []
+        directors: "Director: Andrés Lòpez",
+        costumes: "Costume Designer: Wendy Meaden, Gillian Flatt (asst.)",
+        scenes: "Scenic Designer: Glen Thoreson",
+        lighting: "Lighting Designer: Kevin Shannon",
+        photos: "Photos: Glen Thoreson",
+        img: [mb4, mb2, mb3, mb1]
     },
 
     'about-love': {
         title: "About Love",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Role: ",
+        date: "Date: ",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
-        photos: "Photos: Zach Rosing",
+        directors: "Director: ",
+        costumes: "Costume Designer: ",
+        scenes: "Scenic Designer: ",
+        lighting: "Lighting Designer: ",
+        photos: "Photos: ",
         img: []
     },
 
     'specific-costume': {
         title: "Specific Costume Work",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Role: ",
+        date: "Date: ",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
-        photos: "Photos: Zach Rosing",
+        directors: "Director: ",
+        costumes: "Costume Designer: ",
+        scenes: "Scenic Designer: ",
+        lighting: "Lighting Designer: ",
+        photos: "Photos: ",
         img: []
     },
 
     'wonderland': {
         title: "Wonderland",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Role: ",
+        date: "Date: ",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
-        photos: "Photos: Zach Rosing",
+        directors: "Director: ",
+        costumes: "Costume Designer: ",
+        scenes: "Scenic Designer: ",
+        lighting: "Lighting Designer: ",
+        photos: "Photos: ",
         img: []
     },
 };
