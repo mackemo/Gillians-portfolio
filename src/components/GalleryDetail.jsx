@@ -56,6 +56,8 @@ import mb2 from '../assets/images/gallery-images/mb2.png'
 import mb3 from '../assets/images/gallery-images/mb3.png'
 import mb4 from '../assets/images/gallery-images/mb4.png'
 
+import al1 from '../assets/images/gallery-images/al1.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -98,15 +100,15 @@ const galleryData = {
 
     'about-love': {
         title: "About Love",
-        role: "Role: ",
-        date: "Date: ",
+        role: "Role: Costume Designer",
+        date: "Date: April 2025",
         location: "Butler University Mainstage",
-        directors: "Director: ",
-        costumes: "Costume Designer: ",
-        scenes: "Scenic Designer: ",
-        lighting: "Lighting Designer: ",
-        photos: "Photos: ",
-        img: []
+        directors: "Director: Elaina Artemiev",
+        costumes: "Costume Designer: Gillian Flatt",
+        scenes: "Scenic Designer: TBD",
+        lighting: "Lighting Designer: TBD",
+        photos: "Photos: Zach Rosing",
+        img: [al1]
     },
 
     'specific-costume': {
