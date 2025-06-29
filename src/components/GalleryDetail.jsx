@@ -35,6 +35,22 @@ import td30 from '../assets/images/gallery-images/td30.png'
 import td31 from '../assets/images/gallery-images/td31.png'
 import td32 from '../assets/images/gallery-images/td32.png'
 
+import rg1 from '../assets/images/gallery-images/rg1.png'
+import rg2 from '../assets/images/gallery-images/rg2.png'
+import rg3 from '../assets/images/gallery-images/rg3.png'
+import rg4 from '../assets/images/gallery-images/rg4.png'
+import rg5 from '../assets/images/gallery-images/rg5.png'
+import rg6 from '../assets/images/gallery-images/rg6.png'
+import rg7 from '../assets/images/gallery-images/rg7.png'
+import rg8 from '../assets/images/gallery-images/rg8.png'
+import rg9 from '../assets/images/gallery-images/rg9.png'
+import rg10 from '../assets/images/gallery-images/rg10.png'
+import rg11 from '../assets/images/gallery-images/rg11.png'
+import rg12 from '../assets/images/gallery-images/rg12.png'
+import rg13 from '../assets/images/gallery-images/rg13.png'
+import rg14 from '../assets/images/gallery-images/rg14.png'
+import rg15 from '../assets/images/gallery-images/rg15.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -51,15 +67,15 @@ const galleryData = {
 
     'radium-girls': {
         title: "Radium Girls",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Role: Miss Wiley",
+        date: "Date: February 2024",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
+        directors: "Director: Constance Macy",
+        costumes: "Costume Designer: Guy Clark",
         scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
+        lighting: "Lighting Designer: Ryan Koharchik",
         photos: "Photos: Zach Rosing",
-        img: []
+        img: [rg1, rg2, rg3, rg4, rg5, rg6, rg7, rg8, rg9, rg10, rg11, rg12, rg13, rg14, rg15]
     },
 
     'men-on-boats': {
