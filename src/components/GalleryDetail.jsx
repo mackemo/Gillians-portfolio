@@ -2,6 +2,39 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import td1 from '../assets/images/gallery-images/td1.png'
+import td2 from '../assets/images/gallery-images/td2.png'
+import td3 from '../assets/images/gallery-images/td3.png'
+import td4 from '../assets/images/gallery-images/td4.png'
+import td5 from '../assets/images/gallery-images/td5.png'
+import td6 from '../assets/images/gallery-images/td6.png'
+import td7 from '../assets/images/gallery-images/td7.png'
+import td8 from '../assets/images/gallery-images/td8.png'
+import td9 from '../assets/images/gallery-images/td9.png'
+import td10 from '../assets/images/gallery-images/td10.png'
+import td11 from '../assets/images/gallery-images/td11.png'
+import td12 from '../assets/images/gallery-images/td12.png'
+import td13 from '../assets/images/gallery-images/td13.png'
+import td14 from '../assets/images/gallery-images/td14.png'
+import td15 from '../assets/images/gallery-images/td15.png'
+import td16 from '../assets/images/gallery-images/td16.png'
+import td17 from '../assets/images/gallery-images/td17.png'
+import td18 from '../assets/images/gallery-images/td18.png'
+import td19 from '../assets/images/gallery-images/td19.png'
+import td20 from '../assets/images/gallery-images/td20.png'
+import td21 from '../assets/images/gallery-images/td21.png'
+import td22 from '../assets/images/gallery-images/td22.png'
+import td23 from '../assets/images/gallery-images/td23.png'
+import td24 from '../assets/images/gallery-images/td24.png'
+import td25 from '../assets/images/gallery-images/td25.png'
+import td26 from '../assets/images/gallery-images/td26.png'
+import td27 from '../assets/images/gallery-images/td27.png'
+import td28 from '../assets/images/gallery-images/td28.png'
+import td29 from '../assets/images/gallery-images/td29.png'
+import td30 from '../assets/images/gallery-images/td30.png'
+import td31 from '../assets/images/gallery-images/td31.png'
+import td32 from '../assets/images/gallery-images/td32.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -13,7 +46,7 @@ const galleryData = {
         scenes: "Scenic Designer: Rob Koharchik",
         lighting: "Lighting Designer: Cathy Snipe",
         photos: "Photos: Zach Rosing",
-        img: []
+        img: [td1, td2, td3, td4, td5, td6, td7, td8, td9, td10, td11, td12, td13, td14, td15, td16, td17, td18, td19, td20, td21, td22, td23, td24, td25, td26, td27, td28, td29, td30, td31, td32]
     },
 
     'radium-girls': {
@@ -101,11 +134,11 @@ function GalleryDetail() {
             <section className="gallery-detail">
                 <h1>{item.title}</h1>
                 <div className='gallery-info'>
-                    <div>
+                    <div className='left-info'>
                         <p>{item.role}</p>
                         <p>{item.date}</p>
                     </div>
-                    <div>
+                    <div className='right-info'>
                         <p>{item.location}</p>
                         <p>{item.directors}</p>
                         <p>{item.costumes}</p>
@@ -114,9 +147,9 @@ function GalleryDetail() {
                         <p>{item.photos}</p>
                     </div>
                 </div>
-                <div className="gallery-images">
+                <div className='gallery-images-container'>
                     {item.img.map((src, idx) => (
-                        <img key={idx} src={src} alt={`${item.title} ${idx + 1}`} />
+                        <img className="gallery-images" key={idx} src={src} alt={`${item.title} ${idx + 1}`} />
                     ))}
                 </div>
             </section>
