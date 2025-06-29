@@ -83,9 +83,10 @@ function Contact() {
     };
 
     return (
-        <section>
-            <h3 className='contact-title'>Contact</h3>
-            <form onSubmit={handleSubmit}>
+        <section className="contact-section">
+            <h3 className="contact-title">Contact</h3>
+            <div className="contact-form-wrapper">
+                <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label><br />
                 <input
                     type="text"
@@ -119,7 +120,9 @@ function Contact() {
                 <button type="submit">
                     Send
                 </button>
-            </form>
+                </form>
+                {successMessage && <p className="success-message">{successMessage}</p>}
+            </div>
         </section>
     )
 }
