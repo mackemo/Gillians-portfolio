@@ -35,7 +35,7 @@ function About({ setHideNavbar }) {
                     <h3>About Me</h3>
                     <div className="stats">
                     <p>Gillain Flatt (she/they)</p>
-                    <p>Height 5'5</p>
+                    <p>Height: 5'5</p>
                     <p>Hair Color: Ginger</p>
                     <p>Eye Color: Green</p>
                     <p>Location: Indianapolis, IN</p>

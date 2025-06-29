@@ -1,6 +1,8 @@
 import React from 'react';
 import headshot from '../assets/images/headshot.png'
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+
 
 function Home() {
     return (
@@ -13,7 +15,17 @@ function Home() {
             <main className="home-container">
                 <div className='home-text'>
                     <h2 className='name'>Gillian Flatt</h2>
-                    <h5 className='title'>Actor, Singer, Designer</h5>
+                    <h5 className='title'>
+                        <TypeAnimation
+                        sequence={[
+                            'Actor, Singer, Designer',  
+                            1000                      
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}              
+                        />
+                    </h5>
                     <p className='intro'>
                         Murmurs from the house, a last minute prop check, and...
                         <br></br>
