@@ -21,7 +21,7 @@ function Contact() {
 
     // set changes of form input
     const handleChange = (e) => {
-        const { name, value } = e.targert;
+        const { name, value } = e.target;
 
         setForm({
             ...form,
@@ -83,9 +83,10 @@ function Contact() {
     };
 
     return (
-        <section>
-            <h3 className='contact-title'>Contact</h3>
-            <form onSubmit={handleSubmit}>
+        <section className="contact-section">
+            <h3 className="contact-title">Contact</h3>
+            <div className="contact-form-wrapper">
+                <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label><br />
                 <input
                     type="text"
@@ -107,7 +108,7 @@ function Contact() {
                 />
 
                 <label htmlFor="message">Message:</label><br />
-                <input
+                <textarea
                     type="text"
                     id="message"
                     name="message"
@@ -119,7 +120,9 @@ function Contact() {
                 <button type="submit">
                     Send
                 </button>
-            </form>
+                </form>
+                {successMessage && <p className="success-message">{successMessage}</p>}
+            </div>
         </section>
     )
 }
