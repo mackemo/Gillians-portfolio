@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 
 function Contact() {
@@ -83,47 +84,56 @@ function Contact() {
     };
 
     return (
-        <section className="contact-section">
-            <h3 className="contact-title">Contact</h3>
-            <div className="contact-form-wrapper">
-                <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label><br />
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    required
-                />
+        <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                >
 
-                <label htmlFor="email">Email:</label><br />
-                <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    required
-                />
+            <section className="contact-section">
+                <h3 className="contact-title">Contact</h3>
+                <div className="contact-form-wrapper">
+                    <form onSubmit={handleSubmit}>
+                    <label htmlFor="name">Name:</label><br />
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={form.name}
+                        onChange={handleChange}
+                        required
+                    />
 
-                <label htmlFor="message">Message:</label><br />
-                <textarea
-                    type="text"
-                    id="message"
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    required
-                />
+                    <label htmlFor="email">Email:</label><br />
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        required
+                    />
 
-                <button type="submit">
-                    Send
-                </button>
-                </form>
-                {successMessage && <p className="success-message">{successMessage}</p>}
-            </div>
-        </section>
+                    <label htmlFor="message">Message:</label><br />
+                    <textarea
+                        type="text"
+                        id="message"
+                        name="message"
+                        value={form.message}
+                        onChange={handleChange}
+                        required
+                    />
+
+                    <button type="submit">
+                        Send
+                    </button>
+                    </form>
+                    {successMessage && <p className="success-message">{successMessage}</p>}
+                </div>
+            </section>
+
+        </motion.div>
     )
 }
 
