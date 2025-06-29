@@ -14,18 +14,18 @@ function Home() {
         >
             <main className="home-container">
                 <div className='home-text'>
-                    <h2 className='name'>Gillian Flatt</h2>
-                    <h5 className='title'>
+                    <h5 className='name'>[ Gillian Flatt ] </h5>
+                    <h2 className='title'>
                         <TypeAnimation
                         sequence={[
-                            'Actor, Singer, Designer',  
+                            'Actor, Singer, and Designer',  
                             1000                      
                         ]}
                         wrapper="span"
                         speed={50}
                         repeat={Infinity}              
                         />
-                    </h5>
+                    </h2>
                     <p className='intro'>
                         Murmurs from the house, a last minute prop check, and...
                         <br></br>
