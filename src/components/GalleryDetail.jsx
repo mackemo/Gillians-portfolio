@@ -69,6 +69,15 @@ import sc8 from '../assets/images/gallery-images/sc8.png'
 import sc9 from '../assets/images/gallery-images/sc9.png'
 import sc10 from '../assets/images/gallery-images/sc10.png'
 
+import w1 from '../assets/images/gallery-images/w1.png'
+import w2 from '../assets/images/gallery-images/w2.png'
+import w3 from '../assets/images/gallery-images/w3.png'
+import w4 from '../assets/images/gallery-images/w4.png'
+import w5 from '../assets/images/gallery-images/w5.png'
+import w6 from '../assets/images/gallery-images/w6.png'
+import w7 from '../assets/images/gallery-images/w7.png'
+import w8 from '../assets/images/gallery-images/w8.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -137,15 +146,15 @@ const galleryData = {
 
     'wonderland': {
         title: "Wonderland",
-        role: "",
-        date: "",
-        location: "Butler University Mainstage",
-        directors: "",
-        costumes: "",
-        scenes: "",
-        lighting: "",
-        photos: "",
-        img: []
+        role: "Dodo Bird",
+        date: "April 2024",
+        location: "Butler University Student Production",
+        directors: "Amanda Rooksberry, Cody Estep",
+        costumes: "Amanda Rooksberry, Cody Estep",
+        scenes: "Amanda Rooksberry, Cody Estep",
+        lighting: "Evalyn Peacey",
+        photos: "Madeleine Hall",
+        img: [w1, w2, w3, w4, w5, w6, w7, w8]
     },
 };
 
