@@ -61,79 +61,79 @@ import al1 from '../assets/images/gallery-images/al1.png'
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
-        role: "Role: Antonia",
-        date: "Date: October 2024",
+        role: "Antonia",
+        date: "October 2024",
         location: "Butler University Mainstage",
-        directors: "Directors: Jos Houben, Emily Wilson",
-        costumes: "Costume Designer: Wendy Meaden",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Cathy Snipe",
-        photos: "Photos: Zach Rosing",
+        directors: "Jos Houben, Emily Wilson",
+        costumes: "Wendy Meaden",
+        scenes: "Rob Koharchik",
+        lighting: "Cathy Snipe",
+        photos: "Zach Rosing",
         img: [td1, td2, td3, td4, td5, td6, td7, td8, td9, td10, td11, td12, td13, td14, td15, td16, td17, td18, td19, td20, td21, td22, td23, td24, td25, td26, td27, td28, td29, td30, td31, td32]
     },
 
     'radium-girls': {
         title: "Radium Girls",
-        role: "Role: Miss Wiley",
-        date: "Date: February 2024",
+        role: "Miss Wiley",
+        date: "February 2024",
         location: "Butler University Mainstage",
         directors: "Director: Constance Macy",
-        costumes: "Costume Designer: Guy Clark",
-        scenes: "Scenic Designer: Rob Koharchik",
-        lighting: "Lighting Designer: Ryan Koharchik",
-        photos: "Photos: Zach Rosing",
+        costumes: "Guy Clark",
+        scenes: "Rob Koharchik",
+        lighting: "Ryan Koharchik",
+        photos: "Zach Rosing",
         img: [rg1, rg2, rg3, rg7, rg5, rg6, rg4, rg8, rg9, rg10, rg11, rg12, rg13, rg14, rg15]
     },
 
     'men-on-boats': {
         title: "Men On Boats",
-        role: "Role: Mr. Asa / Assistant Costume Designer",
-        date: "Date: February 2023",
+        role: "Mr. Asa / Assistant Costume Designer",
+        date: "February 2023",
         location: "Butler University Mainstage",
         directors: "Director: Andrés Lòpez",
-        costumes: "Costume Designer: Wendy Meaden, Gillian Flatt (asst.)",
-        scenes: "Scenic Designer: Glen Thoreson",
-        lighting: "Lighting Designer: Kevin Shannon",
-        photos: "Photos: Glen Thoreson",
+        costumes: "Wendy Meaden, Gillian Flatt (asst.)",
+        scenes: "Glen Thoreson",
+        lighting: "Kevin Shannon",
+        photos: "Glen Thoreson",
         img: [mb4, mb2, mb3, mb1]
     },
 
     'about-love': {
         title: "About Love",
-        role: "Role: Costume Designer",
-        date: "Date: April 2025",
+        role: "Costume Designer",
+        date: "April 2025",
         location: "Butler University Mainstage",
-        directors: "Director: Elaina Artemiev",
-        costumes: "Costume Designer: Gillian Flatt",
-        scenes: "Scenic Designer: TBD",
-        lighting: "Lighting Designer: TBD",
-        photos: "Photos: Zach Rosing",
+        directors: "Elaina Artemiev",
+        costumes: "Gillian Flatt",
+        scenes: "TBD",
+        lighting: "TBD",
+        photos: "Zach Rosing",
         img: [al1]
     },
 
     'specific-costume': {
         title: "Specific Costume Work",
-        role: "Role: ",
-        date: "Date: ",
+        role: "Lead Draper: 1[She Kills Monsters], 2[Hedgehog in the Fog], Costume Design Assistant: 3[Everybody], 4[Men on Boats]",
+        date: "Various",
         location: "Butler University Mainstage",
-        directors: "Director: ",
-        costumes: "Costume Designer: ",
-        scenes: "Scenic Designer: ",
-        lighting: "Lighting Designer: ",
-        photos: "Photos: ",
+        directors: "1[Jos Houben, Emily Wilson], 2[Elaina Artemiev], 3[William Fisher], 4[Andrés Lòpez]",
+        costumes: "1[Wendy Meaden], 2[Wendy Meaden], 3[Wendy Meaden, Gillian Flatt (asst.)], 4[Wendy Meaden, Gillian Flatt (asst.)]",
+        scenes: "1[Rob Koharchik], 2[Glen Thoreson], 3[Rob Koharchik], 4[Glen Thorsen]",
+        lighting: "1[Cathy Snipe], 2[Evalyn Peacey], 3[Cathy Snipe], 4[Kevin Shannon]",
+        photos: "all[Zach Rosing]",
         img: []
     },
 
     'wonderland': {
         title: "Wonderland",
-        role: "Role: ",
-        date: "Date: ",
+        role: "",
+        date: "",
         location: "Butler University Mainstage",
-        directors: "Director: ",
-        costumes: "Costume Designer: ",
-        scenes: "Scenic Designer: ",
-        lighting: "Lighting Designer: ",
-        photos: "Photos: ",
+        directors: "",
+        costumes: "",
+        scenes: "",
+        lighting: "",
+        photos: "",
         img: []
     },
 };
@@ -158,16 +158,16 @@ function GalleryDetail() {
                 <h1>{item.title}</h1>
                 <div className='gallery-info'>
                     <div className='left-info'>
-                        <p>{item.role}</p>
-                        <p>{item.date}</p>
+                        <p><strong>Role: </strong>{item.role}</p>
+                        <p><strong>Date: </strong>{item.date}</p>
                     </div>
                     <div className='right-info'>
-                        <p>{item.location}</p>
-                        <p>{item.directors}</p>
-                        <p>{item.costumes}</p>
-                        <p>{item.scenes}</p>
-                        <p>{item.lighting}</p>
-                        <p>{item.photos}</p>
+                        <p><strong>Location: </strong>{item.location}</p>
+                        <p><strong>Director(s): </strong>{item.directors}</p>
+                        <p><strong>Costume Designer(s): </strong>{item.costumes}</p>
+                        <p><strong>Scenic Designer(s): </strong>{item.scenes}</p>
+                        <p><strong>Lighting Designer(s): </strong>{item.lighting}</p>
+                        <p><strong>Photos: </strong>{item.photos}</p>
                     </div>
                 </div>
                 <div className='gallery-images-container'>

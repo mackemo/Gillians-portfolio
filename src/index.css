@@ -72,7 +72,6 @@ body::after {
   );
 }
 
-
 a {
   font-weight: 600;
   color: var(--color-accent);
@@ -216,6 +215,12 @@ label {
   margin-top: 80px;
 }
 
+strong {
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+
+
 .right-info {
   margin-left: 200px;
 }
@@ -226,7 +231,6 @@ label {
   flex: 1;
   min-width: 200px; 
 }
-
 
 .gallery-images {
   width: 400px;
@@ -497,6 +501,7 @@ form button[type="submit"] {
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
+
 
 
 
