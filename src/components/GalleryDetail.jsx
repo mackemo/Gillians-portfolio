@@ -58,6 +58,17 @@ import mb4 from '../assets/images/gallery-images/mb4.png'
 
 import al1 from '../assets/images/gallery-images/al1.png'
 
+import sc1 from '../assets/images/gallery-images/sc1.png'
+import sc2 from '../assets/images/gallery-images/sc2.png'
+import sc3 from '../assets/images/gallery-images/sc3.png'
+import sc4 from '../assets/images/gallery-images/sc4.png'
+import sc5 from '../assets/images/gallery-images/sc5.png'
+import sc6 from '../assets/images/gallery-images/sc6.png'
+import sc7 from '../assets/images/gallery-images/sc7.png'
+import sc8 from '../assets/images/gallery-images/sc8.png'
+import sc9 from '../assets/images/gallery-images/sc9.png'
+import sc10 from '../assets/images/gallery-images/sc10.png'
+
 const galleryData = {
     'they-dont-pay': {
         title: "They Don't Pay? We Won't Pay!",
@@ -121,7 +132,7 @@ const galleryData = {
         scenes: "1[Rob Koharchik], 2[Glen Thoreson], 3[Rob Koharchik], 4[Glen Thorsen]",
         lighting: "1[Cathy Snipe], 2[Evalyn Peacey], 3[Cathy Snipe], 4[Kevin Shannon]",
         photos: "all[Zach Rosing]",
-        img: []
+        img: [sc3, sc2, sc1, sc4, sc10, sc6, sc7, sc8, sc9, sc5]
     },
 
     'wonderland': {
