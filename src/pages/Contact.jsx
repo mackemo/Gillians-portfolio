@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 
 function Contact() {
@@ -85,56 +86,67 @@ function Contact() {
 
     return (
         <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                >
-
-            <section className="contact-section">
-                <h3 className="contact-title">Contact</h3>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+        <section className="contact-section">
+            <h3 className="contact-title">
+                Contact Me
+            </h3>
+            <p className="chat">
+                    <TypeAnimation
+                    sequence={[
+                        "I'd love to hear from you, let's chat!",  
+                        1000                      
+                    ]}
+                    wrapper="span"
+                    speed={60}
+                    repeat={Infinity}              
+            /></p>
+    
+            <div className="contact-container">
                 <div className="contact-form-wrapper">
-                    <form onSubmit={handleSubmit}>
-                    <label htmlFor="name">Name:</label><br />
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={form.name}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <label htmlFor="email">Email:</label><br />
-                    <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <label htmlFor="message">Message:</label><br />
-                    <textarea
-                        type="text"
-                        id="message"
-                        name="message"
-                        value={form.message}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <button type="submit">
-                        Send
-                    </button>
+                    <form onSubmit={handleSubmit} noValidate>
+                    <label htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={form.name}
+                            onChange={handleChange}
+                        />
+                        {errors.name && <span className="form-error">{errors.name}</span>}
+            
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                        />
+                        {errors.email && <span className="form-error">{errors.email}</span>}
+            
+                        <label htmlFor="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            value={form.message}
+                            onChange={handleChange}
+                        />
+                        {errors.message && <span className="form-error">{errors.message}</span>}
+            
+                        <button type="submit" className="home-button">Send</button>
+            
+                        {successMessage && <p className="success-message">{successMessage}</p>}
                     </form>
-                    {successMessage && <p className="success-message">{successMessage}</p>}
                 </div>
-            </section>
-
+            </div>
+        </section>
         </motion.div>
-    )
+    );
 }
 
 export default Contact;

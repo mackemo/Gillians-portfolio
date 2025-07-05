@@ -1,5 +1,7 @@
 import React from 'react';
 import headshot from '../assets/images/headshot.png'
+import linkedin from '../assets/images/linkedin.png'
+import resume from '../assets/images/resume-icon.png'
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -14,7 +16,6 @@ function Home() {
         >
             <main className="home-container">
                 <div className='home-text'>
-                    <h5 className='name'>[ Gillian Flatt ] </h5>
                     <h2 className='title'>
                         <TypeAnimation
                         sequence={[
@@ -26,22 +27,34 @@ function Home() {
                         repeat={Infinity}              
                         />
                     </h2>
-                    <p className='intro'>
-                        Murmurs from the house, a last minute prop check, and...
-                        <br></br>
-                        <br></br>
-                        My name is Gillian Flatt and I am an Indianapolis based actor, singer, and costume designer. Throughout the past four years I have 
-                        been cultivating my love for storytelling and pushing myself to learn new tools in order to tell those stories. I hold immense value 
-                        in trying to find new angles and aspects of theatre as we all lift each other up as artists. Outside of theatre I enjoy writing, 
-                        drawing, and showing off pictures of my french bulldog, Kevin! Please feel free to take some time to peruse my past acting and 
-                        costume design projects, and I hope to work with you soon ◡̈
-                        <br></br>
-                        <br></br>
-                        ...Lights down, curtain up, and away we go!
-                    </p>
+                    <div className="home-buttons">
+                        <a href="/about">
+                            <button className="home-button">About Me</button>
+                        </a>
+                        <a href="/gallery">
+                            <button className="home-button">Photo Gallery</button>
+                        </a>
+                    </div>
+                    <div className='contact-info'>
+                        <p>615-939-1540</p>
+                        <p>gillianflatt@me.com</p>
+                        <p>Indianapolis, IN</p>
+                        <p>Nashville, TN</p>
+                    </div>
                 </div>
-                <div className='home-image'>
-                    <img className='headshot' src={headshot} alt="Headshot of Gillian"></img>
+
+                <div className='home-image-wrapper'>
+                    <div className='home-image'>
+                        <img className='headshot' src={headshot} alt="Headshot of Gillian" />
+                    </div>
+                    <div className="icons">
+                        <a href="https://www.linkedin.com/in/gillian-flatt-280732368/" target="_blank" rel="noopener noreferrer">
+                        <img className="icon" src={linkedin} alt="Linkedin"/>
+                        </a>
+                        <a href="/resume">
+                        <img className="icon" src={resume} alt="Resume"/>
+                        </a>
+                    </div>
                 </div>
             </main>
         </motion.div>

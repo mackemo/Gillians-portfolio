@@ -20,6 +20,7 @@ function Gallery() {
 
             <section>
                 <h3 className="gallery-title">Gallery</h3>
+                <p className='gallery-subtitle'>Welcome! Please explore to see more details of my acting and costume work!</p>
                 <div className='gallery-section'>
                     
                 <div className="gallery">
