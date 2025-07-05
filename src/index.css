@@ -127,7 +127,6 @@ textarea {
   font-size: 1rem;
   border: 1.5px solid #444;
   border-radius: 6px;
-  background-color: #e9f4e6;
   color: var(--color-text-dark);
   margin-bottom: 1.2em;
   transition: border-color 0.3s ease, background-color 0.3s ease;
