@@ -28,12 +28,12 @@ function Home() {
                         />
                     </h2>
                     <div className="home-buttons">
-                        <a href="/about">
+                        <Link to="/about">
                             <button className="home-button">About Me</button>
-                        </a>
-                        <a href="/gallery">
+                        </Link>
+                        <Link to="/gallery">
                             <button className="home-button">Photo Gallery</button>
-                        </a>
+                        </Link>
                     </div>
                     <div className='contact-info'>
                         <p>615-939-1540</p>
@@ -51,9 +51,9 @@ function Home() {
                         <a href="https://www.linkedin.com/in/gillian-flatt-280732368/" target="_blank" rel="noopener noreferrer">
                         <img className="icon" src={linkedin} alt="Linkedin"/>
                         </a>
-                        <a href="/resume">
+                        <Link to="/resume">
                         <img className="icon" src={resume} alt="Resume"/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </main>
