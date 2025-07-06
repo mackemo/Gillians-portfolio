@@ -4,6 +4,7 @@ import linkedin from '../assets/images/linkedin.png'
 import resume from '../assets/images/resume-icon.png'
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
