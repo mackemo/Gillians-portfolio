@@ -12,7 +12,6 @@ function Navbar() {
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
-        <h2>Gillian Flatt</h2>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>

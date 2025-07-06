@@ -17,6 +17,7 @@ function Home() {
         >
             <main className="home-container">
                 <div className='home-text'>
+                    <h3>[ Gillian Flatt ]</h3>
                     <h2 className='title'>
                         <TypeAnimation
                         sequence={[

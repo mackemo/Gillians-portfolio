@@ -271,6 +271,7 @@ strong {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 
 .navbar-container h2 {
@@ -563,7 +564,6 @@ form button[type="submit"] {
   display: none;
   background: none;
   border: none;
-  font-size: 2rem;
   color: var(--color-text-dark);
   cursor: pointer;
 }
@@ -604,7 +604,6 @@ form button[type="submit"] {
 /* Hamburger nav for smaller than 768 */
 @media (max-width: 768px) {
   .navbar-container {
-    flex-wrap: wrap;
     padding: 0 1rem;
   }
 
@@ -615,13 +614,7 @@ form button[type="submit"] {
     margin-bottom: 1rem;
   }
 
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-  }
-
   .nav-links li a {
-    padding: 0.75rem 0;
     text-align: center;
     width: 100%;
   }
